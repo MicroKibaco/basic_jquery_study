@@ -39,7 +39,7 @@
 </div>
 <script type="text/javascript">
 
-	//给input绑定一个聚焦事件
+	// 给input绑定一个聚焦事件
 	$("input").on("focus", function (event, title) {
 		$(this).val(title)
 	});
@@ -47,6 +47,7 @@
 	$("#accident").on("click", function () {
 		alert("trigger触发的事件会在 DOM 树中向上冒泡");
 	});
+
 	//trigger触发focus
 	$("button:first").click(function () {
 		$("a").trigger("click");
